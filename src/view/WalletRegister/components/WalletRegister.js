@@ -63,6 +63,9 @@ export const TransactionsHistory = styled.div`
   .subs {
     color: #c70000;
   }
+  div {
+    overflow: scroll;
+  }
 `;
 export const InfosTransactions = styled.div`
   display: flex;
