@@ -87,6 +87,9 @@ export const InfosTransactions = styled.div`
     line-height: 19px;
 
     color: #000000;
+    word-break: break-word;
+
+    text-align: start;
   }
 `;
 export const Transactions = styled.button`
