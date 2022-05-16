@@ -27,7 +27,7 @@ export default function SubBalance() {
             } else {
               axios
                 .post(
-                  "http://192.168.254.140:5000/historico-de-transacoes/retirar-saldo",
+                  "https://my-wallet-breno-app.herokuapp.com/historico-de-transacoes/retirar-saldo",
                   {
                     balance: parseFloat(value.replace(",", ".")),
                     token,

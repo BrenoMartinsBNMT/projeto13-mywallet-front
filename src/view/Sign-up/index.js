@@ -15,11 +15,14 @@ export default function SingUp() {
 
   function cadastrar() {
     if (senha === confirmPassword) {
-      let promisse = axios.post("http://192.168.254.140:5000/signUp", {
-        email,
-        name: nome,
-        password: senha,
-      });
+      let promisse = axios.post(
+        "https://my-wallet-breno-app.herokuapp.com/signUp",
+        {
+          email,
+          name: nome,
+          password: senha,
+        }
+      );
       promisse.then((element) => {
         alert("Usuário criado com sucesso!");
         setTimeout(() => {

@@ -9,10 +9,13 @@ export default function SignIn() {
   let [password, setPassword] = useState();
 
   function login() {
-    let promisse = axios.post("http://192.168.254.140:5000/login", {
-      email,
-      password,
-    });
+    let promisse = axios.post(
+      "https://my-wallet-breno-app.herokuapp.com/login",
+      {
+        email,
+        password,
+      }
+    );
 
     promisse
       .then((element) => {

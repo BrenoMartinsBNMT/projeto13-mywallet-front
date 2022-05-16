@@ -18,7 +18,7 @@ export default function WalletRegister() {
 
   useEffect(() => {
     let promisse = axios.post(
-      "http://192.168.254.140:5000/historico-de-transacoes",
+      "https://my-wallet-breno-app.herokuapp.com/historico-de-transacoes",
       {
         token: localTokenLogin,
       }
@@ -31,7 +31,9 @@ export default function WalletRegister() {
 
   function logout() {
     axios
-      .post("http://192.168.254.140:5000/logout", { localTokenLogin })
+      .post("https://my-wallet-breno-app.herokuapp.com/logout", {
+        localTokenLogin,
+      })
       .then(() => {
         navigate("/", { replace: true });
       })
