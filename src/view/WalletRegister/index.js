@@ -81,7 +81,7 @@ export default function WalletRegister() {
             </div>
             <div className="balance">
               <span>Saldo:</span>
-              {infosTransactions.balance > 0 ? (
+              {infosTransactions.balance >= 0 ? (
                 <span className="add">
                   {infosTransactions.balance
                     .toFixed(2)
